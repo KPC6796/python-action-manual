@@ -21,4 +21,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run basic Python script
+        env: 
+          PYTHON_ACTION_MANUAL: ${{ secrets.PYTHON_ACTION_MANUAL }}
         run: python .github/workflows/example.py
